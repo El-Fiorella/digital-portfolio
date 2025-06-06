@@ -20,5 +20,5 @@ A personal portfolio website to showcase my academic journey, projects, and tech
 - Improve mobile responsiveness
 - Add project blog
 
-🔗 Live: https://tshepangsuping.github.io/digital-portfolio/
+🔗 Live: (https://el-fiorella.github.io/digital-portfolio/)
 
