@@ -1,6 +1,6 @@
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f9f9f9;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fffdf9;
   color: #333;
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@ body {
 
 header {
   background-color: #f57c00; /* orange */
-  color: cream white;
+  color: white;
   text-align: center;
   padding: 2rem 1rem;
 }
@@ -16,6 +16,7 @@ header {
 .subtitle {
   font-size: 1.1rem;
   margin-top: 0.5rem;
+  font-weight: 400;
 }
 
 main {
@@ -28,17 +29,19 @@ main {
   background-color: white;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
 }
 
 .card h2 {
-  color: #007acc;
+  color: #f57c00;
+  margin-top: 0;
 }
 
 a {
-  color: #007acc;
+  color: #f57c00;
   text-decoration: none;
+  font-weight: 600;
 }
 
 a:hover {
@@ -48,7 +51,10 @@ a:hover {
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #eee;
+  background-color: #fbe9e7;
   font-size: 0.9rem;
-  color: #666;
+  color: #555;
+  margin-top: 2rem;
 }
+
+
