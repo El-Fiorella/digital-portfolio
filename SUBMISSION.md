@@ -2,7 +2,8 @@
 
 ## 🧑‍💻 What I Built
 
-I created a personal portfolio website hosted on GitHub Pages to showcase my academic journey,
+I created a personal portfolio website hosted on GitHub Pages to showcase
+my academic journey,
 technical skills, and GitHub projects.
 This project also demonstrates my ability to use GitHub features like Projects,
 Actions, Pages, branching, and workflows.
