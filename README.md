@@ -2,7 +2,7 @@
 
 ## ✅ What I Built
 
-A personal portfolio website to showcase my academic journey, 
+A personal portfolio website to showcase my academic journey,
 projects and technical skills.
 
 ## 🚀 Features
