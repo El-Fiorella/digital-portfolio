@@ -39,6 +39,3 @@ working toward a diploma in Information Technology.
 Tshepang Suping  
 📧 Email: <tappy902@gmail.com>  
 🔗 LinkedIn: <https://www.linkedin.com/in/tshepang-suping-573308345>
-
-
-
