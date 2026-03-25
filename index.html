@@ -9,45 +9,89 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>👋 Hi, I'm Tshepang Suping</h1>
-    <p class="subtitle">Student> Penetration Tester> Ethical Hacker> Cybersecurity Enthusiast</p>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Tshepang Suping</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <header id="home" class="hero">
+    <div class="hero-content">
+    <h1> Hi, I'm Tshepang Suping</h1>
+    <p class="subtitle"> Penetration Tester> Ethical Hacker> Cybersecurity Enthusiast</p>
+    <p class="hero-description"> Aspiring Ethical Hacker specializing in infrastructure security, cryptographic attack vectors, and defensive architecture. Currently finishing my 3rd year at Belgium Campus iTversity.
+      </p> 
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View My Lab Reports</a>
+        <a href="mailto:s_tshepang@icloud.com" class="btn-secondary">Contact Me</a>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section class="card">
-     
-      <h2> 🛡️ Cybersecurity: Ethical Hacking and Penetration Testing Projects </h2>
-      <ul>
-          <li><strong> Ransomware Attack Simulation:</strong> Created a Python payload to demonstrate file encryption and system backdoor entry. 
+      <section id="skills" class="section-container">
+      <h2>Technical Expertise</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+            <h3>Infrastructure Security</h3>
+            <p><strong>Tools:</strong> Kali Linux, Metasploit, Nmap, Wireshark, Burp Suite.</p>
+        </div>
+        <div class="skill-item">
+            <h3>Scripting & Development</h3>
+            <p><strong>Languages:</strong> Python (Security Tools), Bash (Automation), SQL (Queries/Injection).</p>
+        </div>
+        <div class="skill-item">
+            <h3>Vulnerability Analysis</h3>
+            <p><strong>Specializations:</strong> Privilege Escalation (Linux), OWASP Top 10, Network Reconnaissance.</p>
+        </div>
+      </div>
+    </section>
+   <section id="projects" class="section-container">
+      <h2> Ethical Hacking and Penetration Testing Projects </h2>
+      <p class="projects-intro">These individual lab scenarios demonstrate hands-on exploitation and technical analysis. Full documentation is provided for each vector.</p>
+
+      <div class="project-grid">
+
+         <div class="project-card">
+          <h2> Ransomware Attack Simulation</h2>
+          <p> Created a Python payload to demonstrate file encryption and system backdoor entry.</p>
             <br><a href="Ransomware attack simulation.pdf" target="_blank">📄 View Technical Report</a>
-          </li>
-          <li><strong> Privilege Escalation Simulation:</strong> Used GTFOBins techniques to elevate user permissions to Root on a Linux target
+         </div>
+
+        <div class="project-card">
+          <h3> Privilege Escalation Simulation</h3>
+          <p> Used GTFOBins techniques to elevate user permissions to Root on a Linux target</p>
             <br><a href="Privilege escalation simulation.pdf" target="_blank">📄 View Technical Report</a>
-          </li>
-          <li><strong> Web Security Lab: </strong> Cloned a banking portal to simulate SQL Injection and XSS attacks using Flask and SQLite.
+        </div>
+        
+         <div class="project-card">
+          <h3> Web Security Lab</h3> 
+          <p> Cloned a banking portal to simulate SQL Injection and XSS attacks using Flask and SQLite.</p>
             <br><a href="Web Security lab.pdf" target="_blank">📄 View Technical Report</a>
-          </li>
-
-      </ul>
-
+        </div>
     </section>
 
-    <section class="card">
-      <h2>🎓 Academic Journey</h2>
-      <p>Currently pursuing a Diploma in Information Technology at <strong>Belgium Campus iTversity </strong> in Johannesburg.</p>
+    <section id="about" class="section-container card-accent">
+      <h2> Academic Journey</h2>
+      <p>Currently pursuing a Diploma in Information Technology at <strong>Belgium Campus iTversity (Expected Completion: 2026). </strong> in Johannesburg.</p>
     </section>
 
-    <section class="card">
-      <h2>📫 Contact</h2>
+    <footer id="contact">
+      <div class="footer-container">
       <p>Email: <a href="mailto:s_tshepang@icloud.com">s_tshepang@icloud.com</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/tshepang-suping-573308345" target="_blank">tshepang-suping</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>Made with 🧡 by Tshepang Suping</p>
+      <p class="copyright">© 2026 Tshepang Suping | Built for the Infrastructure Specialization</p>  
+    </div>
   </footer>
+
 </body>
 </html>
 
