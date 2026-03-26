@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tshepang Suping | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -11,30 +12,39 @@
 
   <nav class="navbar">
     <div class="nav-container">
-      <a href="#" class="logo">Tshepang Suping</a>
+      <a href="#" class="logo">Tshepang Suping's Portfolio</a>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <header id="home" class="hero">
+  <header id="home" class="hero hero-centered">
     <div class="hero-content">
-      <h1>Hi, I'm Tshepang</h1>
-      <p class="subtitle">Cybersecurity Specialist | Penetration Tester</p>
-      <p class="hero-description">
+      <h1>Hi, I'm Tshepang Suping</h1>
+      <p class="subtitle subtitle-slate">PENETRATION TESTER> ETHICAL HACKER> CYBERSECURITY ENTHUSIAST</p>
+      
+      <p class="hero-description description-centered">
         Aspiring Ethical Hacker specializing in infrastructure security, cryptographic attack vectors, and defensive architecture. Currently finishing my 3rd year at Belgium Campus iTversity.
       </p>
-      <div class="hero-btns">
+
+      <div class="contact-block-centered">
+        <a href="mailto:s_tshepang@icloud.com" class="contact-item">
+          <i class="fas fa-envelope"></i> s_tshepang@icloud.com
+        </a>
+        <a href="https://www.linkedin.com/in/tshepang-suping" target="_blank" class="contact-item">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+
+      <div class="hero-btns btns-centered">
         <a href="#projects" class="btn-primary">View My Lab Reports</a>
-        <a href="mailto:tappy902@gmail.com" class="btn-secondary">Contact Me</a>
       </div>
     </div>
-    </header>
+  </header>
 
   <main>
     <section id="skills" class="section-container">
@@ -61,45 +71,39 @@
       
       <div class="project-grid">
         
-        <div class="project-card">
+        <div class="project-card project-card-authoritative">
           <h3>Cryptographic Attack Vector & Payload Development</h3>
           <p>Designed and executed a full-chain cryptographic attack using a custom Python payload. This simulation demonstrated vulnerability impact, secure file encryption methodologies, and established a persistent system backdoor.</p>
           <p class="project-tools"><strong>Skills Verified:</strong> Cryptography, Payload Obfuscation, Persistence.</p>
-          <a href="Tshepang_Suping_Ransomware_Simulation.pdf" target="_blank" class="text-link">View Technical Report →</a>
+          <a href="Tshepang_Suping_Ransomware_Simulation.pdf" target="_blank" class="text-link authoritative-link">View Technical Report →</a>
         </div>
 
-        <div class="project-card">
+        <div class="project-card project-card-authoritative">
           <h3>Linux SUID & Binary Privilege Escalation</h3>
           <p>Identified critical misconfigurations on a Linux system, focusing on unsafe SUID permissions. Implemented GTFOBins techniques to successfully escalate user privileges from guest level to Root access.</p>
           <p class="project-tools"><strong>Skills Verified:</strong> Kernel Vulnerability Analysis, Misconfiguration Exploitation.</p>
-          <a href="Tshepang_Suping_Privilege_Escalation.pdf" target="_blank" class="text-link">View Technical Report →</a>
+          <a href="Tshepang_Suping_Privilege_Escalation.pdf" target="_blank" class="text-link authoritative-link">View Technical Report →</a>
         </div>
 
-        <div class="project-card">
+        <div class="project-card project-card-authoritative">
           <h3>Web Application Vulnerability Analysis Lab</h3>
           <p>Cloned a target financial application to analyze SQL Injection and Cross-Site Scripting (XSS) vulnerabilities. Implemented defensive coding (Flask/SQLite) to simulate the remediation of critical OWASP Top 10 risks.</p>
           <p class="project-tools"><strong>Skills Verified:</strong> OWASP Top 10, Web API Hardening, Secure Development.</p>
-          <a href="Tshepang_Suping_Web_Security_Lab.pdf" target="_blank" class="text-link">View Technical Report →</a>
+          <a href="Tshepang_Suping_Web_Security_Lab.pdf" target="_blank" class="text-link authoritative-link">View Technical Report →</a>
         </div>
 
       </div>
     </section>
 
-    <section id="about" class="section-container card-accent">
-      <h2>Academic & Professional Background</h2>
-      <p>I am a highly motivated 3rd-year student pursuing a **Diploma in Information Technology** (Infrastructure Stream) at **Belgium Campus iTversity** in Johannesburg (Expected Completion: 2026).</p>
-      
-      <p>My academic focus has centered on **Advanced Network Security, Cloud Infrastructure, and Ethical Hacking**. Beyond my coursework, I actively hone my skills in controlled lab environments (like TryHackMe/HackTheBox), specializing in the identification and remediation of critical infrastructure vulnerabilities.</p>
-      
-      <p>As I prepare for my upcoming internship, I am eager to apply my technical documentation and penetration testing skills to real-world challenges.</p>
+    <section id="about" class="section-container card-accent card-accent-centered">
+      <h2>Academic Background</h2>
+      <p>Currently pursuing a Diploma in Information Technology at **Belgium Campus iTversity** (Expected Completion: 2026), specializing in the **Infrastructure Stream** (Advanced Network Security, Cloud Infrastructure, and Ethical Hacking).</p>
     </section>
 
   </main>
 
   <footer id="contact">
-    <div class="footer-container">
-        <p>Email: <a href="mailto:tappy902@gmail.com">tappy902@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/tshepang-suping-573308345" target="_blank">tshepang-suping</a></p>
+    <div class="footer-container footer-centered">
         <p class="copyright">© 2026 Tshepang Suping | Built for the Infrastructure Specialization</p>
     </div>
   </footer>
