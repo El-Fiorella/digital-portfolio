@@ -15,7 +15,7 @@ projects and technical skills.
 ## 🎓 Academic Journey
 
 Currently studying at **Belgium Campus** in Johannesburg,
-working toward a diploma in Information Technology.
+working toward a Diploma in Information Technology.
 
 ## 🛠️ Tech Used
 
