@@ -1,49 +1,297 @@
+/* 1. Global Reset & Theme Variables */
 :root {
   --bg-color: #f8fafc;
   --nav-bg: #ffffff;
-  --accent-purple: #7c3aed;       /* Main Purple */
-  --border-purple: #7c3aed;       /* Solid Purple Border */
-  --border-subtle-purple: #ddd6fe;/* Soft Light Purple Border */
+  --accent-purple: #7c3aed;
+  --accent-purple-hover: #6d28d9;
+  --border-purple: #7c3aed;
+  --border-subtle-purple: #ddd6fe;
   --text-dark: #0f172a;
   --text-light: #64748b;
-  --card-shadow: 0 4px 12px rgba(124, 58, 237, 0.1);
+  --card-shadow: 0 4px 12px rgba(124, 58, 237, 0.08);
 }
 
-/* Navbar Bottom Border */
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  scroll-behavior: smooth; 
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* 2. Navigation */
 .navbar {
-  border-bottom: 2px solid var(--border-purple);
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  background: var(--nav-bg); 
+  padding: 1rem 0;
+  border-bottom: 2px solid var(--border-purple); 
+  z-index: 1000;
 }
 
-/* Skill Cards Border */
-.skill-item {
-  border: 1px solid var(--border-subtle-purple);
-}
-.skill-item:hover {
-  border-color: var(--border-purple);
+.nav-container {
+  max-width: 1000px; 
+  margin: 0 auto;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0 2rem;
 }
 
-/* Project Cards Border */
+.logo { 
+  font-weight: 700; 
+  text-decoration: none; 
+  color: var(--text-dark); 
+  font-size: 1.1rem; 
+}
+
+.nav-links { 
+  display: flex; 
+  list-style: none; 
+  gap: 2rem; 
+}
+
+.nav-links a { 
+  text-decoration: none; 
+  color: var(--text-light); 
+  font-weight: 500; 
+  font-size: 0.9rem; 
+  transition: color 0.3s; 
+}
+
+.nav-links a:hover { 
+  color: var(--accent-purple); 
+}
+
+/* 3. Hero Section */
+.hero-centered {
+  max-width: 1000px;
+  margin: 120px auto 60px auto;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-centered h1 { 
+  font-size: 3rem; 
+  margin-bottom: 0.5rem; 
+}
+
+.subtitle-slate { 
+  color: var(--accent-purple); 
+  font-weight: 700; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+  font-size: 0.85rem; 
+  margin-bottom: 2rem; 
+}
+
+.description-centered { 
+  max-width: 650px; 
+  margin: 0 auto 2.5rem auto; 
+  color: var(--text-light); 
+  font-size: 1.1rem; 
+}
+
+.contact-block-centered {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 2rem; 
+  margin-bottom: 3rem;
+}
+
+.contact-item {
+  text-decoration: none; 
+  color: var(--text-dark); 
+  font-weight: 600; 
+  font-size: 1rem;
+  display: flex; 
+  align-items: center; 
+  gap: 8px; 
+  transition: color 0.3s;
+}
+
+.contact-item i { 
+  color: var(--accent-purple); 
+  font-size: 1.1rem; 
+}
+
+.contact-item:hover { 
+  color: var(--accent-purple); 
+  text-decoration: underline; 
+}
+
+.btns-centered { 
+  display: flex; 
+  justify-content: center; 
+}
+
+.btn-primary { 
+  background: var(--accent-purple); 
+  color: white; 
+  padding: 0.8rem 1.5rem; 
+  border-radius: 6px; 
+  text-decoration: none; 
+  font-weight: 600; 
+  display: inline-block; 
+  transition: background 0.3s; 
+}
+
+.btn-primary:hover { 
+  background: var(--accent-purple-hover); 
+}
+
+/* 4. Section Containers & Typography */
+.section-container { 
+  max-width: 1000px; 
+  margin: 5rem auto; 
+  padding: 0 2rem; 
+}
+
+h2 { 
+  margin-bottom: 1rem; 
+  font-size: 1.5rem; 
+  text-align: center; 
+  position: relative; 
+}
+
+h2::after { 
+  content: ''; 
+  display: block; 
+  width: 50px; 
+  height: 3px; 
+  background: var(--border-purple); 
+  margin: 0.5rem auto 2rem auto; 
+}
+
+.projects-intro {
+  text-align: center;
+  color: var(--text-light);
+  margin-bottom: 2.5rem;
+}
+
+/* 5. Skills Grid */
+.skills-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: 1.5rem; 
+}
+
+.skill-item { 
+  background: white; 
+  padding: 1.5rem; 
+  border-radius: 8px; 
+  border: 1px solid var(--border-subtle-purple); 
+  box-shadow: var(--card-shadow); 
+  transition: border-color 0.3s;
+}
+
+.skill-item:hover { 
+  border-color: var(--border-purple); 
+}
+
+.skill-item h3 { 
+  font-size: 1.05rem; 
+  margin-bottom: 0.5rem; 
+  color: var(--accent-purple); 
+}
+
+/* 6. Projects Grid */
+.project-grid { 
+  display: grid; 
+  grid-template-columns: 1fr; 
+  gap: 2rem; 
+}
+
 .project-card-authoritative {
-  border: 2px solid var(--border-subtle-purple);
-}
-.project-card-authoritative:hover {
-  border-color: var(--border-purple);
+  background: white; 
+  padding: 2.5rem; 
+  border-radius: 12px;
+  border: 2px solid var(--border-subtle-purple); 
+  box-shadow: var(--card-shadow); 
+  transition: transform 0.3s, border-color 0.3s;
 }
 
-/* Tool Callout Box Left Border */
+.project-card-authoritative:hover { 
+  border-color: var(--border-purple); 
+  transform: translateY(-3px); 
+}
+
+.project-card-authoritative h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
 .project-tools {
+  font-size: 0.85rem;
+  color: #1e293b;
+  margin: 1.2rem 0;
+  padding: 0.6rem 1rem;
+  background: #f1f5f9;
   border-left: 4px solid var(--border-purple);
   border-top: 1px solid var(--border-subtle-purple);
   border-right: 1px solid var(--border-subtle-purple);
   border-bottom: 1px solid var(--border-subtle-purple);
+  border-radius: 4px;
 }
 
-/* Section Header Underline Divider */
-h2::after {
-  background: var(--border-purple);
+.project-tools strong {
+  color: var(--accent-purple);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
 }
 
-/* Footer Top Border */
-footer {
+.authoritative-link { 
+  color: var(--accent-purple); 
+  text-decoration: underline; 
+  font-weight: 700; 
+  margin-top: 1rem; 
+  display: inline-block; 
+}
+
+.authoritative-link:hover { 
+  color: var(--accent-purple-hover); 
+}
+
+/* 7. About Section & Footer */
+.card-accent-centered { 
+  text-align: center; 
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle-purple);
+  box-shadow: var(--card-shadow);
+}
+
+.card-accent-centered p { 
+  max-width: 600px; 
+  margin: 0.5rem auto; 
+}
+
+footer { 
+  text-align: center; 
+  padding: 4rem 2rem; 
+  background: #e2e8f0; 
+  color: var(--text-light); 
+  margin-top: 6rem; 
   border-top: 2px solid var(--border-purple);
+}
+
+.copyright { 
+  font-size: 0.85rem; 
+}
+
+/* 8. Responsive Design */
+@media (max-width: 768px) {
+  .hero-centered h1 { font-size: 2.2rem; }
+  .nav-links { display: none; }
+  .contact-block-centered { flex-direction: column; gap: 1rem; }
 }
